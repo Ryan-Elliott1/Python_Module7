@@ -16,6 +16,8 @@ def make_list():
     for x in range(3):
         try:
             full_list.append(int(get_input()))
+            if full_list[x] < 1 or full_list[x] > 50:
+                raise ValueError
         except ValueError as err:
             raise ValueError
             print("ValueError encountered")
