@@ -23,9 +23,15 @@ def search_list(a_list, obj_look):
 
 
 def sort_list(a_list):
-    pass
+    """Returns the sorted list
+    :param a_list the users list
+    :returns the uses list sorted
+    """
+    a_list.sort()  # although for this program it is not needed to pass in and return the list to sort it, for future use this way is better
+    return a_list
 
 
 if __name__ == '__main__':
     ab_list = [3, 2, 5]
     print(search_list(ab_list, 4))
+    print(sort_list(ab_list))
