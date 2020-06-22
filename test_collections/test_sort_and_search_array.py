@@ -9,3 +9,6 @@ class TestList(unittest.TestCase):
 
     def test_search_array_not_found(self):
         self.assertEqual(sort_and_search_array.search_array([3, 2, 5], 4), -1)
+
+    def test_sort_array(self):
+        self.assertEqual(sort_and_search_array.sort_array([3, 2, 5]), [2, 3, 5])
